@@ -1,7 +1,7 @@
 import React from "react";
 
-const SuperButton = () => {
-  return <button>buttn</button>;
+const SuperButton = ({ text }) => {
+  return <button className="primary-btn">{text}</button>;
 };
 
 export default SuperButton;
