@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FaLeaf } from "react-icons/fa";
 import { MdMenu, MdOutlineShoppingCart } from "react-icons/md";
 import ResponsiveMenu from "./ResponsiveMenu";
@@ -16,7 +17,12 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="container flex justify-between items-center py-4 md:pt-4">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="container flex justify-between items-center py-4 md:pt-4"
+        >
           <div className="text-2xl flex items-center gap-2 font-bold uppercase">
             <p className="text-secondary">Fruit</p>
             <p className="text-primary">Store</p>
@@ -47,7 +53,7 @@ const Navbar = () => {
           >
             <MdMenu className="text-4xl" />
           </div>
-        </div>
+        </motion.div>
       </nav>
       <ResponsiveMenu isOpen={isOpen} />
     </>
