@@ -1,7 +1,15 @@
-import React from "react";
+import { FaLeaf } from "react-icons/fa";
 
 const Navbar = () => {
-  return <div>Navbar</div>;
+  return (
+    <nav>
+      <div className="container">
+        <p>Fruit</p>
+        <p>Store</p>
+        <FaLeaf />
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
