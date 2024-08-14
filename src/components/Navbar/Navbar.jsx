@@ -1,4 +1,5 @@
 import { FaLeaf } from "react-icons/fa";
+import { MdMenu, MdOutlineShoppingCart } from "react-icons/md";
 
 const initMenuNavBar = [
   { id: 1, name: "Home", link: "/" },
@@ -21,7 +22,7 @@ const Navbar = () => {
           <ul className="flex items-center gap-6 text-gray-700">
             {initMenuNavBar.map((item, index) => {
               return (
-                <li className="text-xl" key={item.id}>
+                <li key={item.id}>
                   <a
                     href={item.link}
                     className="inline-block py-1 px-3 hover:text-primary hover:shadow-[0_3px_0_-1px_#ef4444] font-semibold"
@@ -31,7 +32,13 @@ const Navbar = () => {
                 </li>
               );
             })}
+            <button className="text-2xl hover:bg-primary rounded-full hover:text-white p-2 duration-200">
+              <MdOutlineShoppingCart />
+            </button>
           </ul>
+        </div>
+        <div className="md:hidden">
+          <MdMenu className="text-4xl" />
         </div>
       </div>
     </nav>
