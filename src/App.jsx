@@ -12,12 +12,12 @@ const App = () => {
     <>
       <main className="overflow-x-hidden ">
         <Navbar />
-        <Hero />
+        {/* <Hero />
         <Menus />
         <Banner />
         <Banner2 />
         <Banner3 />
-        <Footer />
+        <Footer /> */}
       </main>
     </>
   );
