@@ -28,16 +28,26 @@ const Hero = () => {
               Order <span className="text-secondary"> Now</span> For Fresh
               Healthy Life
             </motion.p>
-            <p className="text-gray-500">
+            <motion.p
+              variants={FadeRight(1.2)}
+              initial="hidden"
+              animate="visible"
+              className="text-gray-500"
+            >
               Healthy and yummy food for fresh morning breakfast. Eat Daily for
-              good health and mind order{" "}
+              good health and mind order
               <span className="text-primary">NOW</span> and
               <span className="text-primary"> GET 30% </span>off on your first
               <span className="text-secondary ml-1">ORDER</span>
-            </p>
-            <div className="flex justify-center md:justify-start">
+            </motion.p>
+            <motion.div
+              variants={FadeRight(1.5)}
+              initial="hidden"
+              animate="visible"
+              className="flex justify-center md:justify-start"
+            >
               <SuperButton text={"Order Now"} />
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="flex justify-center items-center">
