@@ -36,7 +36,7 @@ const Hero = () => {
             >
               Healthy and yummy food for fresh morning breakfast. Eat Daily for
               good health and mind order
-              <span className="text-primary">NOW</span> and
+              <span className="text-primary ml-1">NOW</span> and
               <span className="text-primary"> GET 30% </span>off on your first
               <span className="text-secondary ml-1">ORDER</span>
             </motion.p>
@@ -51,7 +51,10 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <img
+          <motion.img
+            initial={{ opacity: 0, x: 200, rotate: 75 }}
+            animate={{ opacity: 1, x: 0, rotate: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
             src={HeroImage}
             alt=""
             className="w-[350px] md:w-[550px] drop-shadow"
