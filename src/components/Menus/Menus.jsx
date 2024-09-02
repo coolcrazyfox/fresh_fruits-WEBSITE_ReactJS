@@ -21,7 +21,10 @@ const Menus = () => {
         </h1>
         <div>
           {MenuData.map((m, index) => {
-            <div key={m.id}>{m.name}</div>;
+            <div key={m.id}>
+              <img src={m.img} alt={m.name} />
+              {m.name}
+            </div>;
           })}
         </div>
       </div>
