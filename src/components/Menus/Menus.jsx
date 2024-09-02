@@ -13,7 +13,7 @@ const Menus = () => {
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="font-bold text-2xl text-left pb-10 cursor-pointer"
+          className="font-bold text-2xl text-left pb-10 "
         >
           Our Menu
         </motion.h1>
@@ -24,17 +24,23 @@ const Menus = () => {
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
-          className="flex  justify-start  my-4 "
+          className="flex  justify-start md:flex-col sm:flex-col  sm:items-start my-4 sm:my-none"
         >
           {!isOnClick ? (
-            <p
-              className="text-secondary font-bold text-xl  cursor-pointer"
+            <motion.p
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              className="text-secondary lg:font-bold  md:font-normal sm:font-normal text-xl  cursor-pointer"
               onClick={() => setIsOnClick(!isOnClick)}
             >
               More ...
-            </p>
+            </motion.p>
           ) : (
-            <p
+            <motion.p
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.3 }}
               className="text-secondary font-bold text-xl  cursor-pointer ml-2"
               onClick={() => setIsOnClick(!isOnClick)}
             >
@@ -42,7 +48,7 @@ const Menus = () => {
                 <IoMdArrowRoundBack />
                 Back
               </div>
-            </p>
+            </motion.p>
           )}
         </motion.div>
       </div>
