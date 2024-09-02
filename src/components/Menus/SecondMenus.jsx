@@ -4,7 +4,7 @@ import { FadeLeft } from "./../../utility/animation";
 import { BiDollar } from "react-icons/bi";
 import img1 from "../../assets/fruits/banana.png";
 import img2 from "../../assets/fruits/cherries.png";
-import img3 from "../../assets/fruits/orange.png";
+import img3 from "../../assets/fruits/grape.png";
 import img4 from "../../assets/fruits/watermelon.png";
 const MenuData = [
   {
