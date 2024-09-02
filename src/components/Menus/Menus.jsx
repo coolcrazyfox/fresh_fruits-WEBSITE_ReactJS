@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import SuperButton from "./../SuperButton/SuperButton";
+import { IoMdArrowRoundBack } from "react-icons/io";
 import FirstMenus from "./FirstMenus";
 import SecondMenus from "./SecondMenus";
 
@@ -26,12 +26,24 @@ const Menus = () => {
           transition={{ duration: 1, delay: 0.3 }}
           className="flex  justify-start  my-4 "
         >
-          <p
-            className="text-secondary font-bold text-xl  cursor-pointer"
-            onClick={() => setIsOnClick(!isOnClick)}
-          >
-            More ...
-          </p>
+          {!isOnClick ? (
+            <p
+              className="text-secondary font-bold text-xl  cursor-pointer"
+              onClick={() => setIsOnClick(!isOnClick)}
+            >
+              More ...
+            </p>
+          ) : (
+            <p
+              className="text-secondary font-bold text-xl  cursor-pointer ml-2"
+              onClick={() => setIsOnClick(!isOnClick)}
+            >
+              <div className="flex flex-row items-center  gap-1">
+                <IoMdArrowRoundBack />
+                Back
+              </div>
+            </p>
+          )}
         </motion.div>
       </div>
     </section>
