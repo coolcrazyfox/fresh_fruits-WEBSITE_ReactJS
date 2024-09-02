@@ -15,19 +15,26 @@ const MenuData = [
 const Menus = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container pt-12 pb-20">
         <h1 className="font-bold text-2xl text-left pb-10 cursor-pointer">
           Our Menu
         </h1>
-        <div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {MenuData.map((m, index) => {
             return (
-              <div key={m.id}>
+              <div
+                key={m.id}
+                className="px-4 py-2 bg-white rounded-3xl flex flex-row justify-around items-center gap-3 shadow-[0_0_22px_0_rgba(0,0,0,0.15)]"
+              >
                 <img
                   src={m.img}
                   alt={m.name}
                   className="w-[60px] mb-4 scale-125 transform -translate-y-6 "
                 />
+                <div>
+                  <h1>{m.name}</h1>
+                  <p>{m.price}</p>
+                </div>
               </div>
             );
           })}
