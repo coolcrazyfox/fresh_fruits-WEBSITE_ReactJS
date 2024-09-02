@@ -29,11 +29,13 @@ const Menus = () => {
                 <img
                   src={m.img}
                   alt={m.name}
-                  className="w-[60px] mb-4 scale-125 transform -translate-y-6 "
+                  className="w-[60px] mb-4 scale-110 transform -translate-y-6 "
                 />
                 <div>
-                  <h1>{m.name}</h1>
-                  <p>{m.price}</p>
+                  <h1 className="text-lg font-semibold">{m.name}</h1>
+                  <p className="text-lg font-semibold text-secondary">
+                    {m.price}
+                  </p>
                 </div>
               </div>
             );
