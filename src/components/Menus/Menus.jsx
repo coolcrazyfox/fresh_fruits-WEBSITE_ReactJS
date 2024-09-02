@@ -2,16 +2,16 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FadeLeft } from "./../../utility/animation";
 import { BiDollar } from "react-icons/bi";
-import img1 from "../../assets/fruits/avocado.png";
-import img2 from "../../assets/fruits/cherry.png";
+import img1 from "../../assets/fruits/banana.png";
+import img2 from "../../assets/fruits/cherries.png";
 import img3 from "../../assets/fruits/orange.png";
 import img4 from "../../assets/fruits/apple.png";
 
 const MenuData = [
   {
     id: 1,
-    name: "Fresh Avocado",
-    link: "/avocado",
+    name: "Fresh Bananas",
+    link: "/bananas",
     price: 5.99,
     img: img1,
     delay: 0.3,
