@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { FadeRight } from "./../../utility/animation";
 import { BiDollar } from "react-icons/bi";
 import img1 from "../../assets/fruits/avocado.png";
 import img2 from "../../assets/fruits/cherry.png";
