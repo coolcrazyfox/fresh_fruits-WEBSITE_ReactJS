@@ -44,6 +44,7 @@ const MenuData = [
 ];
 
 const Menus = () => {
+  const [isOnClick, setIsOnClick] = React.useState(false);
   return (
     <section>
       <div className="container pt-12 pb-20">
@@ -84,9 +85,15 @@ const Menus = () => {
             );
           })}
         </div>
-        <div className="flex  justify-start  my-4 ">
+        <motion.div
+          onClick={() => setIsOnClick(!isOnClick)}
+          initial={{ opacity: 0, x: -200 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          className="flex  justify-start  my-4 "
+        >
           <SuperButton text={"More"} />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
