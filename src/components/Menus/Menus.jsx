@@ -29,7 +29,7 @@ const Menus = () => {
                 <img
                   src={m.img}
                   alt={m.name}
-                  className="w-[60px] mb-4 scale-110 transform -translate-y-6 "
+                  className="w-[60px] mb-4 scale-110 transform -translate-y-1 "
                 />
                 <div>
                   <h1 className="text-lg font-semibold">{m.name}</h1>
