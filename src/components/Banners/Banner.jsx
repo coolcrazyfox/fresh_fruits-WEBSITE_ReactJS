@@ -1,7 +1,50 @@
 import React from "react";
-
+import BannerImg from "../../assets/fruits-splash.png";
+import { motion } from "framer-motion";
+import { FadeUp } from "./../../utility/animation";
 const Banner = () => {
-  return <div>Banner</div>;
+  return (
+    <section>
+      <div className="container">
+        <div>
+          <img
+            src={BannerImg}
+            alt="fruits_banner"
+            className="w-[300px] md:max-w-[400px] h-full object-cover"
+          />
+        </div>
+        <div>
+          <div>
+            <h1>Brand Information</h1>
+            <p>
+              We're all aiming for a once-in-a-lifetime proper lunch at our
+              homes. Everything a person does and earns is for the sole purpose
+              of feeding themselves and their families. As a result, everyone
+              wants to eat a balanced diet in order to stay healthy and fit. As
+              a result, it is essential to consume fresh fruits and vegetables
+              in order to maintain a healthy lifestyle. There are several fresh
+              fruits and vegetables brands that now provide organic and fresh
+              products. Everywhere to look, the food that is available is
+              becoming increasingly far away from nature. Processed foods are
+              coming with preservatives and chemicals abound on supermarket
+              shelves. It is becoming increasingly difficult to get fruits and
+              vegetables that are free of preservatives and dangerous chemicals,
+              but due our brand to fresh fruits that provide us with consumables
+              straight from nature, this is changing.
+            </p>
+            <h1>Nurturing future</h1>
+            <p>
+              As growing acceptance of the health advantages of organic fruits
+              has risen, so has demand for organic fresh fruits on the market.
+              The increase in popularity of a vegetarian diet has greatly
+              assisted business growth. Thus, every day, new trends are launched
+              by our brand fresh fruits .
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Banner;
