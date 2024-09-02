@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FadeRight } from "./../../utility/animation";
+import { FadeLeft } from "./../../utility/animation";
 import { BiDollar } from "react-icons/bi";
 import img1 from "../../assets/fruits/avocado.png";
 import img2 from "../../assets/fruits/cherry.png";
@@ -8,10 +8,38 @@ import img3 from "../../assets/fruits/orange.png";
 import img4 from "../../assets/fruits/apple.png";
 
 const MenuData = [
-  { id: 1, name: "Fresh Avocado", link: "/avocado", price: 5.99, img: img1 },
-  { id: 2, name: "Fresh Cherries", link: "/cherries", price: 4.99, img: img2 },
-  { id: 3, name: "Fresh Oranges", link: "/oranges", price: 2.99, img: img3 },
-  { id: 4, name: "Fresh Apples", link: "/apples", price: 1.99, img: img4 },
+  {
+    id: 1,
+    name: "Fresh Avocado",
+    link: "/avocado",
+    price: 5.99,
+    img: img1,
+    delay: 0.3,
+  },
+  {
+    id: 2,
+    name: "Fresh Cherries",
+    link: "/cherries",
+    price: 4.99,
+    img: img2,
+    delay: 0.6,
+  },
+  {
+    id: 3,
+    name: "Fresh Oranges",
+    link: "/oranges",
+    price: 2.99,
+    img: img3,
+    delay: 0.9,
+  },
+  {
+    id: 4,
+    name: "Fresh Apples",
+    link: "/apples",
+    price: 1.99,
+    img: img4,
+    delay: 1.2,
+  },
 ];
 
 const Menus = () => {
@@ -29,8 +57,11 @@ const Menus = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {MenuData.map((m, index) => {
             return (
-              <div
+              <motion.div
                 key={m.id}
+                variants={FadeLeft(m.delay)}
+                initial="hidden"
+                whileInView={"visible"}
                 className="px-4 py-2 bg-white rounded-3xl flex flex-row justify-around items-center gap-3 shadow-[0_0_22px_0_rgba(0,0,0,0.15)]"
               >
                 <img
@@ -47,7 +78,7 @@ const Menus = () => {
                     </div>
                   </p>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
