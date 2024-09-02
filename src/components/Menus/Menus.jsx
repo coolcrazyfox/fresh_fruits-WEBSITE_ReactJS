@@ -18,6 +18,7 @@ const Menus = () => {
           Our Menu
         </motion.h1>
         <FirstMenus />
+        {isOnClick && <SecondMenus isOpen={isOnClick} />}
 
         <motion.div
           initial={{ opacity: 0, x: -200 }}
@@ -25,9 +26,13 @@ const Menus = () => {
           transition={{ duration: 1, delay: 0.3 }}
           className="flex  justify-start  my-4 "
         >
-          <SuperButton text={"More"} onClick={() => setIsOnClick(!isOnClick)} />
+          <p
+            className="text-secondary font-bold text-xl  cursor-pointer"
+            onClick={() => setIsOnClick(!isOnClick)}
+          >
+            More ...
+          </p>
         </motion.div>
-        {isOnClick && <SecondMenus isOpen={isOnClick} />}
       </div>
     </section>
   );
