@@ -62,6 +62,7 @@ const Menus = () => {
                 variants={FadeLeft(m.delay)}
                 initial="hidden"
                 whileInView={"visible"}
+                whileHover={{ scale: 1.1 }}
                 className="px-4 py-2 bg-white rounded-3xl flex flex-row justify-around items-center gap-3 shadow-[0_0_22px_0_rgba(0,0,0,0.15)]"
               >
                 <img
