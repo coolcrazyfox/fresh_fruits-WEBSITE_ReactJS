@@ -6,6 +6,7 @@ import img1 from "../../assets/fruits/banana.png";
 import img2 from "../../assets/fruits/cherries.png";
 import img3 from "../../assets/fruits/orange.png";
 import img4 from "../../assets/fruits/apple.png";
+import SuperButton from "./../SuperButton/SuperButton";
 
 const MenuData = [
   {
@@ -82,6 +83,9 @@ const Menus = () => {
               </motion.div>
             );
           })}
+        </div>
+        <div className="flex  justify-start  my-4 ">
+          <SuperButton text={"More"} />
         </div>
       </div>
     </section>
