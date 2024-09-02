@@ -22,7 +22,11 @@ const Menus = () => {
         <div>
           {MenuData.map((m, index) => {
             <div key={m.id}>
-              <img src={m.img} alt={m.name} />
+              <img
+                src={m.img}
+                alt={m.name}
+                className="w-[60px] mb-4 scale-125 transform-translate-y-6 "
+              />
               {m.name}
             </div>;
           })}
