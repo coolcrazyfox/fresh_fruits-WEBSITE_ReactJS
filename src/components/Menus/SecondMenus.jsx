@@ -40,8 +40,42 @@ const MenuData = [
     delay: 1.2,
   },
 ];
-const SecondMenus = () => {
-  return <div></div>;
+const SecondMenus = ({ isOpen }) => {
+  return (
+    <>
+      {isOpen && (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          {MenuData.map((m, index) => {
+            return (
+              <motion.div
+                key={m.id}
+                variants={FadeLeft(m.delay)}
+                initial="hidden"
+                whileInView={"visible"}
+                whileHover={{ scale: 1.1 }}
+                className="px-4 py-2 bg-white rounded-3xl flex flex-row justify-around items-center gap-3 shadow-[0_0_22px_0_rgba(0,0,0,0.15)]"
+              >
+                <img
+                  src={m.img}
+                  alt={m.name}
+                  className="w-[60px] mb-4 scale-110 transform -translate-y-1 "
+                />
+                <div>
+                  <h1 className="text-lg font-semibold">{m.name}</h1>
+                  <p className="text-lg font-semibold text-secondary">
+                    <div className="flex flex-row  items-center">
+                      <BiDollar className="text-xl font-bold text-black" />
+                      {m.price}
+                    </div>
+                  </p>
+                </div>
+              </motion.div>
+            );
+          })}
+        </div>
+      )}
+    </>
+  );
 };
 
 export default SecondMenus;

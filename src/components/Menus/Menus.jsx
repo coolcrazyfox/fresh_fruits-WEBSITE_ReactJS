@@ -1,9 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FadeLeft } from "./../../utility/animation";
-
 import SuperButton from "./../SuperButton/SuperButton";
 import FirstMenus from "./FirstMenus";
+import SecondMenus from "./SecondMenus";
 
 const Menus = () => {
   const [isOnClick, setIsOnClick] = React.useState(false);
@@ -21,14 +20,14 @@ const Menus = () => {
         <FirstMenus />
 
         <motion.div
-          onClick={() => setIsOnClick(!isOnClick)}
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
           className="flex  justify-start  my-4 "
         >
-          <SuperButton text={"More"} />
+          <SuperButton text={"More"} onClick={() => setIsOnClick(!isOnClick)} />
         </motion.div>
+        {isOnClick && <SecondMenus isOpen={isOnClick} />}
       </div>
     </section>
   );
