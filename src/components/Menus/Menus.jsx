@@ -1,5 +1,5 @@
 import React from "react";
-
+import { BiDollar } from "react-icons/bi";
 import img1 from "../../assets/fruits/avocado.png";
 import img2 from "../../assets/fruits/cherry.png";
 import img3 from "../../assets/fruits/orange.png";
@@ -34,7 +34,10 @@ const Menus = () => {
                 <div>
                   <h1 className="text-lg font-semibold">{m.name}</h1>
                   <p className="text-lg font-semibold text-secondary">
-                    {m.price}
+                    <div className="flex flex-row  items-center">
+                      <BiDollar className="text-xl font-bold text-black" />{" "}
+                      {m.price}
+                    </div>
                   </p>
                 </div>
               </div>
