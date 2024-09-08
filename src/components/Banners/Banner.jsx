@@ -2,6 +2,7 @@ import React from "react";
 import BannerImg from "../../assets/fruits-splash.png";
 import { motion } from "framer-motion";
 import { FadeUp } from "./../../utility/animation";
+import SuperButton from "./../SuperButton/SuperButton";
 const Banner = () => {
   return (
     <section>
@@ -40,6 +41,9 @@ const Banner = () => {
               assisted business growth. Thus, every day, new trends are launched
               by our brand fresh fruits .
             </p>
+            <motion.div>
+              <SuperButton text={"Learn More"} />
+            </motion.div>
           </div>
         </div>
       </div>
