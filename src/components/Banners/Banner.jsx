@@ -5,7 +5,7 @@ import { FadeUp } from "./../../utility/animation";
 import SuperButton from "./../SuperButton/SuperButton";
 const Banner = () => {
   return (
-    <section className="bg-green-500/10">
+    <section className="bg-green-400/10">
       <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14">
         <div className="flex justify-center items-center">
           <motion.img
