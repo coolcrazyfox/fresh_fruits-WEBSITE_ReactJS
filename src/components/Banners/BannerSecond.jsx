@@ -15,9 +15,9 @@ const BannerSecond = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="uppercase text-3xl  lg:text-4xl font-bold "
+              className="uppercase text-3xl  lg:text-4xl font-bold text-primary"
             >
-              Brand Information
+              Online Fruit Store
             </motion.h1>
             <motion.p
               variants={FadeUp(0.7)}
@@ -25,49 +25,34 @@ const BannerSecond = () => {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              We're all aiming for a once-in-a-lifetime proper lunch at our
-              homes. Everything a person does and earns is for the sole purpose
-              of feeding themselves and their families. As a result, everyone
-              wants to eat a balanced diet in order to stay healthy and fit. As
-              a result, it is essential to consume fresh fruits and vegetables
-              in order to maintain a healthy lifestyle. There are several fresh
-              fruits and vegetables brands that now provide organic and fresh
-              products. Everywhere to look, the food that is available is
-              becoming increasingly far away from nature. Processed foods are
-              coming with preservatives and chemicals abound on supermarket
-              shelves. It is becoming increasingly difficult to get fruits and
-              vegetables that are free of preservatives and dangerous chemicals,
-              but due our brand to fresh fruits that provide us with consumables
-              straight from nature, this is changing.
+              Fresh Fruits are the best way to nourish your body with essential
+              nutrients while delighting in their vibrant flavours. Discover the
+              finest selection of fresh fruits online at FRUIT STORE. We aim to
+              bring you the finest fruits handpicked for their quality, flavour,
+              and taste. Check out these fresh fruit stores today to bring you
+              closer to a healthier you!
             </motion.p>
-            <motion.h1
+
+            <motion.p
               variants={FadeUp(0.9)}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="uppercase text-3xl text-secondary md:text-primary  font-bold "
             >
-              Nurturing future
-            </motion.h1>
-            <motion.p
-              variants={FadeUp(1.2)}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-            >
-              As growing acceptance of the health advantages of organic fruits
-              has risen, so has demand for organic fresh fruits on the market.
-              The increase in popularity of a vegetarian diet has greatly
-              assisted business growth. Thus, every day, new trends are launched
-              by our brand fresh fruits .
+              The rule of thumb with vegetables and fruits online shopping is
+              that the more colourful they are on your platter, the more health
+              benefits you gain. Whether you indulge in the citrusy juiciness of
+              kaffir lime or buy a chayote for its mild-tasting squash flavour,
+              our wide selection of fresh fruits online is of the best quality
+              and packed with freshness.
             </motion.p>
             <motion.div
-              variants={FadeUp(1.5)}
+              variants={FadeUp(1.1)}
               animate="visible"
               initial="hidden"
               className="flex justify-center md:justify-start"
             >
-              <SuperButton text={"Learn More"} />
+              <SuperButton text={"Download"} />
             </motion.div>
           </div>
         </div>
