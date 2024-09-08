@@ -25,7 +25,12 @@ const Banner = () => {
             >
               Brand Information
             </motion.h1>
-            <p>
+            <motion.p
+              variants={FadeUp(0.7)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
               We're all aiming for a once-in-a-lifetime proper lunch at our
               homes. Everything a person does and earns is for the sole purpose
               of feeding themselves and their families. As a result, everyone
@@ -40,17 +45,28 @@ const Banner = () => {
               vegetables that are free of preservatives and dangerous chemicals,
               but due our brand to fresh fruits that provide us with consumables
               straight from nature, this is changing.
-            </p>
-            <h1 className="uppercase text-3xl text-secondary md:text-primary  font-bold ">
+            </motion.p>
+            <motion.h1
+              variants={FadeUp(0.9)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="uppercase text-3xl text-secondary md:text-primary  font-bold "
+            >
               Nurturing future
-            </h1>
-            <p>
+            </motion.h1>
+            <motion.p
+              variants={FadeUp(1.2)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
               As growing acceptance of the health advantages of organic fruits
               has risen, so has demand for organic fresh fruits on the market.
               The increase in popularity of a vegetarian diet has greatly
               assisted business growth. Thus, every day, new trends are launched
               by our brand fresh fruits .
-            </p>
+            </motion.p>
             <motion.div
               variants={FadeUp(1.5)}
               animate="visible"
