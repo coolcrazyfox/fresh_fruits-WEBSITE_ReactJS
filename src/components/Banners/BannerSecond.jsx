@@ -27,10 +27,13 @@ const BannerSecond = () => {
             >
               Fresh Fruits are the best way to nourish your body with essential
               nutrients while delighting in their vibrant flavours. Discover the
-              finest selection of fresh fruits online at FRUIT STORE. We aim to
-              bring you the finest fruits handpicked for their quality, flavour,
-              and taste. Check out these fresh fruit stores today to bring you
-              closer to a healthier you!
+              finest selection of fresh fruits online at
+              <span className="text-secondary font-bold mx-1 uppercase">
+                fruit store
+              </span>
+              . We aim to bring you the finest fruits handpicked for their
+              quality, flavour, and taste. Check out these fresh fruit stores
+              today to bring you closer to a healthier you!
             </motion.p>
 
             <motion.p
