@@ -16,7 +16,7 @@ const initIconsLogo = [
 ];
 const Footer = () => {
   return (
-    <footer className="bg-secondary/10 py-12">
+    <footer className="bg-secondary/10 py-12 mt-12">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
