@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <section>
       <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14">
-        <div>
+        <div className="flex justify-center items-center">
           <img
             src={BannerImg}
             alt="fruits_banner"
