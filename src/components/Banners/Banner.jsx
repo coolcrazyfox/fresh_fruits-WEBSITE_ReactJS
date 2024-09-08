@@ -8,7 +8,10 @@ const Banner = () => {
     <section>
       <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14">
         <div className="flex justify-center items-center">
-          <img
+          <motion.img
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ type: "string", stiffness: 100, delay: 0.2 }}
             src={BannerImg}
             alt="fruits_banner"
             className="w-[300px] md:max-w-[400px] h-full object-cover"
