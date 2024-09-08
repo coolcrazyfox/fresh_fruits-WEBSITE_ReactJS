@@ -5,13 +5,14 @@ import { FadeUp } from "./../../utility/animation";
 import SuperButton from "./../SuperButton/SuperButton";
 const Banner = () => {
   return (
-    <section>
+    <section className="bg-primary/10">
       <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14">
         <div className="flex justify-center items-center">
           <motion.img
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ type: "string", stiffness: 100, delay: 0.2 }}
+            viewport={{ once: true }}
             src={BannerImg}
             alt="fruits_banner"
             className="w-[300px] md:max-w-[400px] h-full object-cover"
