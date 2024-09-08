@@ -41,7 +41,12 @@ const Banner = () => {
               assisted business growth. Thus, every day, new trends are launched
               by our brand fresh fruits .
             </p>
-            <motion.div>
+            <motion.div
+              variants={FadeUp(1.5)}
+              animate="visible"
+              initial="hidden"
+              className="flex justify-center md:justify-start"
+            >
               <SuperButton text={"Learn More"} />
             </motion.div>
           </div>
