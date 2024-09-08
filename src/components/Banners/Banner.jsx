@@ -14,7 +14,7 @@ const Banner = () => {
             className="w-[300px] md:max-w-[400px] h-full object-cover"
           />
         </div>
-        <div>
+        <div className="flex flex-col justify-center">
           <div>
             <h1>Brand Information</h1>
             <p>
