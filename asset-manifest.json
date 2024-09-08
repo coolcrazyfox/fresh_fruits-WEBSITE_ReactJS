@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/fresh_fruits-WEBSITE_ReactJS/static/css/main.11351b71.css",
+    "main.js": "/fresh_fruits-WEBSITE_ReactJS/static/js/main.45d4d7f8.js",
+    "static/media/fruits-splash.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/fruits-splash.95aaaedef6d0f2f2700c.png",
+    "static/media/fruit-plate2.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/fruit-plate2.cdd1797ecfc9a1612597.png",
+    "static/media/banner-bg.jpg": "/fresh_fruits-WEBSITE_ReactJS/static/media/banner-bg.8b3eba470670ec83e0d2.jpg",
+    "static/media/fruit-plate.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/fruit-plate.9b326f9b0cdbbc5b87b8.png",
+    "static/media/grape.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/grape.83b2ba781af585f3b231.png",
+    "static/media/cherries.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/cherries.7aea18e88b6a8131ce5d.png",
+    "static/media/watermelon.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/watermelon.0db1f0b9a037e842dbca.png",
+    "static/media/pineapples.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/pineapples.1c5a8728029d1d654ff9.png",
+    "static/media/strawberry.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/strawberry.6c2cdd6eb08b7956b6d5.png",
+    "static/media/apple.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/apple.bfe5155197370c39c0cf.png",
+    "static/media/orange.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/orange.9846d083f754be5a6b10.png",
+    "static/media/banana.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/banana.4f102dde8f3fee6a99e1.png",
+    "static/media/leaf.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/leaf.2494492049ec270e2011.png",
+    "index.html": "/fresh_fruits-WEBSITE_ReactJS/index.html",
+    "main.11351b71.css.map": "/fresh_fruits-WEBSITE_ReactJS/static/css/main.11351b71.css.map",
+    "main.45d4d7f8.js.map": "/fresh_fruits-WEBSITE_ReactJS/static/js/main.45d4d7f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11351b71.css",
+    "static/js/main.45d4d7f8.js"
+  ]
+}
