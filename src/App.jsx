@@ -4,7 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Menus from "./components/Menus/Menus";
 import Banner from "./components/Banners/Banner";
 import BannerSecond from "./components/Banners/BannerSecond";
-import Banner3 from "./components/Banners/Banner3";
+import BannerThird from "./components/Banners/BannerThird";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
         <Menus />
         <Banner />
         <BannerSecond />
-        <Banner3 />
+        <BannerThird />
         <Footer />
       </main>
     </>
