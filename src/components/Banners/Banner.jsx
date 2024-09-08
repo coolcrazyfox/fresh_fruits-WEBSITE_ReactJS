@@ -15,8 +15,8 @@ const Banner = () => {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <div className="text-center md:text-left space-y-4 lg:max-w-[400px]">
-            <h1 className="uppercase text-3xl text-secondary md:text-primary lg:text-6xl font-bold ">
+          <div className="text-center md:text-left space-y-4 lg:max-w-[600px]">
+            <h1 className="uppercase text-3xl text-secondary md:text-primary lg:text-5xl font-bold ">
               Brand Information
             </h1>
             <p>
@@ -35,7 +35,9 @@ const Banner = () => {
               but due our brand to fresh fruits that provide us with consumables
               straight from nature, this is changing.
             </p>
-            <h1>Nurturing future</h1>
+            <h1 className="uppercase text-3xl text-secondary md:text-primary  font-bold ">
+              Nurturing future
+            </h1>
             <p>
               As growing acceptance of the health advantages of organic fruits
               has risen, so has demand for organic fresh fruits on the market.
