@@ -15,7 +15,7 @@ const BannerSecond = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="uppercase text-3xl  lg:text-4xl font-bold text-primary"
+              className="uppercase text-3xl  lg:text-6xl font-bold text-primary"
             >
               Online Fruit Store
             </motion.h1>
