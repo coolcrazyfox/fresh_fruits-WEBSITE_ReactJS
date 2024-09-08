@@ -6,7 +6,7 @@ import SuperButton from "./../SuperButton/SuperButton";
 const Banner = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container grid grid-cols-1 md:grid-cols-2">
         <div>
           <img
             src={BannerImg}
