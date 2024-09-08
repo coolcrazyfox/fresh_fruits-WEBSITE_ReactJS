@@ -5,7 +5,7 @@ import { FadeUp } from "./../../utility/animation";
 import SuperButton from "./../SuperButton/SuperButton";
 const Banner = () => {
   return (
-    <section className="bg-primary/10">
+    <section className="bg-green-500/10">
       <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 py-14">
         <div className="flex justify-center items-center">
           <motion.img
@@ -15,7 +15,7 @@ const Banner = () => {
             viewport={{ once: true }}
             src={BannerImg}
             alt="fruits_banner"
-            className="w-[300px] md:max-w-[400px] h-full object-cover"
+            className="w-[300px] md:max-w-[400px] h-full object-cover drop-shadow"
           />
         </div>
         <div className="flex flex-col justify-center">

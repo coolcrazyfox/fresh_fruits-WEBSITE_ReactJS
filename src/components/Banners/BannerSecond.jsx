@@ -79,7 +79,7 @@ const BannerSecond = () => {
             viewport={{ once: true }}
             src={BannerImg}
             alt="fruits_banner"
-            className="w-[300px] md:max-w-[400px] h-full object-cover"
+            className="w-[300px] md:max-w-[400px] h-full object-cover drop-shadow"
           />
         </div>
       </div>
