@@ -16,7 +16,9 @@ const Banner = () => {
         </div>
         <div className="flex flex-col justify-center">
           <div className="text-center md:text-left space-y-4 lg:max-w-[400px]">
-            <h1>Brand Information</h1>
+            <h1 className="uppercase text-3xl text-secondary md:text-primary lg:text-6xl font-bold ">
+              Brand Information
+            </h1>
             <p>
               We're all aiming for a once-in-a-lifetime proper lunch at our
               homes. Everything a person does and earns is for the sole purpose
