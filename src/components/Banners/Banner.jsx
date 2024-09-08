@@ -16,9 +16,15 @@ const Banner = () => {
         </div>
         <div className="flex flex-col justify-center">
           <div className="text-center md:text-left space-y-4 lg:max-w-[600px]">
-            <h1 className="uppercase text-3xl text-secondary md:text-primary lg:text-5xl font-bold ">
+            <motion.h1
+              variants={FadeUp(0.5)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="uppercase text-3xl text-secondary md:text-primary lg:text-5xl font-bold "
+            >
               Brand Information
-            </h1>
+            </motion.h1>
             <p>
               We're all aiming for a once-in-a-lifetime proper lunch at our
               homes. Everything a person does and earns is for the sole purpose
