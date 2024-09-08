@@ -6,7 +6,7 @@ import { FaInstagram, FaTwitter, FaLeaf, FaFacebookF } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer>
-      <div className="container"></div>
+      <div className="container flex justify-between items-center"></div>
     </footer>
   );
 };
