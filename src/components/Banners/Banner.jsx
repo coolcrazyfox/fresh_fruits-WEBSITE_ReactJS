@@ -25,7 +25,7 @@ const Banner = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="uppercase text-3xl text-secondary md:text-primary lg:text-5xl font-bold "
+              className="uppercase text-3xl text-secondary md:text-primary lg:text-4xl font-bold "
             >
               Brand Information
             </motion.h1>
