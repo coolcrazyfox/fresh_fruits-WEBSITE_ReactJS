@@ -1,4 +1,6 @@
 import React from "react";
+import { PATH } from "../../routes/RouterRoot";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaLeaf } from "react-icons/fa";
 import { MdMenu, MdOutlineShoppingCart } from "react-icons/md";

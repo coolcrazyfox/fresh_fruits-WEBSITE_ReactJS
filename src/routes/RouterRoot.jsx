@@ -1,17 +1,17 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Hero from "../components/Hero/Hero";
-import About from "../pages/About";
-import Explore from "../pages/Explore";
-import Gallery from "../pages/Gallery";
-import Contact from "../pages/Contact";
-import Error404 from "../pages/Contact";
+import Error404 from "../components/Error404/Error404";
+import Footer from "../components/Footer/Footer";
+import Menus from "../components/Menus/Menus";
+import Banner from "../components/Banners/Banner";
+import BannerThird from "../components/Banners/BannerThird";
 
 export const PATH = {
   HERO: "/",
-  ABOUT: "/about",
-  EXPLORE: "/explore",
-  GALLERY: "/gallery",
+  ORDER: "/products",
+  SHOP: "/shop",
+  BANNERS: "/about",
   CONTACT: "/contact",
   ERROR404: "*",
 };
@@ -20,10 +20,10 @@ const RouterRoot = () => {
     <>
       <Routes>
         <Route path={PATH.HERO} element={<Hero />} />
-        <Route path={PATH.ABOUT} element={<About />} />
-        <Route path={PATH.EXPLORE} element={<Explore />} />
-        <Route path={PATH.GALLERY} element={<Gallery />} />
-        <Route path={PATH.CONTACT} element={<Contact />} />
+        <Route path={PATH.ORDER} element={<Menus />} />
+        <Route path={PATH.SHOP} element={<BannerThird />} />
+        <Route path={PATH.BANNERS} element={<Banner />} />
+        <Route path={PATH.CONTACT} element={<Footer />} />
         <Route path={PATH.ERROR404} element={<Error404 />} />
       </Routes>
     </>
