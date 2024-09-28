@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+
 import {
   FaInstagram,
   FaTwitter,
@@ -52,7 +53,11 @@ const Footer = () => {
         </div>
         <div className="text-3xl flex items-center gap-4 mt-6 text-gray-700">
           {initIconsLogo.map((l, index) => {
-            return <l.logo key={l.id} className="text-primary " />;
+            return (
+              <a key={l.id} href={l.link}>
+                <l.logo className="text-primary " />
+              </a>
+            );
           })}
         </div>
       </motion.div>
