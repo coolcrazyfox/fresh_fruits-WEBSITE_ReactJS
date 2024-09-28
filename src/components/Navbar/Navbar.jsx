@@ -7,11 +7,11 @@ import { MdMenu, MdOutlineShoppingCart } from "react-icons/md";
 import ResponsiveMenu from "./ResponsiveMenu";
 
 export const initMenuNavBar = [
-  { id: 1, name: "Home", link: "/" },
-  { id: 2, name: "Products", link: "/products" },
-  { id: 3, name: "Shop", link: "/shop" },
-  { id: 4, name: "Contacts", link: "/contacts" },
-  { id: 5, name: "About", link: "/about" },
+  { id: 1, name: "Home", link: PATH.HERO },
+  { id: 2, name: "Products", link: PATH.ORDER },
+  { id: 3, name: "Shop", link: PATH.SHOP },
+  { id: 4, name: "About", link: PATH.BANNERS },
+  { id: 5, name: " Contacts", link: PATH.CONTACT },
 ];
 
 const Navbar = () => {
@@ -35,12 +35,12 @@ const Navbar = () => {
               {initMenuNavBar.map((item, index) => {
                 return (
                   <li key={item.id}>
-                    <a
-                      href={item.link}
+                    <Link
+                      to={item.link}
                       className="inline-block py-1 px-3 hover:text-primary hover:shadow-[0_3px_0_-1px_#ef4444] font-semibold"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   </li>
                 );
               })}
