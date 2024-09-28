@@ -6,13 +6,15 @@ import {
   FaLeaf,
   FaFacebookF,
   FaTelegram,
+  FaWhatsapp,
 } from "react-icons/fa";
 
 const initIconsLogo = [
-  { id: 1, name: "Instagram", logo: FaInstagram },
-  { id: 2, name: "Twitter", logo: FaTwitter },
-  { id: 3, name: "Facebook", logo: FaFacebookF },
-  { id: 4, name: "Telegram", logo: FaTelegram },
+  { id: 1, name: "Instagram", logo: FaInstagram, link: "" },
+  { id: 2, name: "Twitter", logo: FaTwitter, link: "" },
+  { id: 3, name: "Facebook", logo: FaFacebookF, link: "" },
+  { id: 4, name: "Telegram", logo: FaTelegram, link: "" },
+  { id: 5, name: "Telegram", logo: FaWhatsapp, link: "" },
 ];
 const Footer = () => {
   return (
