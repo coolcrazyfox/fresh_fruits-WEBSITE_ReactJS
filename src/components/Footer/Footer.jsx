@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         <div className="text-3xl flex items-center gap-4 mt-6 text-gray-700">
           {initIconsLogo.map((l, index) => {
-            return <l.logo key={l.id} className="text-primary" />;
+            return <l.logo key={l.id} className="text-primary " />;
           })}
         </div>
       </motion.div>
