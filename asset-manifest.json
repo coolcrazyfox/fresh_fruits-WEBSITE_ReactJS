@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/fresh_fruits-WEBSITE_ReactJS/static/css/main.11351b71.css",
-    "main.js": "/fresh_fruits-WEBSITE_ReactJS/static/js/main.45d4d7f8.js",
+    "main.css": "/fresh_fruits-WEBSITE_ReactJS/static/css/main.63d29c8b.css",
+    "main.js": "/fresh_fruits-WEBSITE_ReactJS/static/js/main.d7bca604.js",
     "static/media/fruits-splash.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/fruits-splash.95aaaedef6d0f2f2700c.png",
     "static/media/fruit-plate2.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/fruit-plate2.cdd1797ecfc9a1612597.png",
     "static/media/banner-bg.jpg": "/fresh_fruits-WEBSITE_ReactJS/static/media/banner-bg.8b3eba470670ec83e0d2.jpg",
@@ -16,11 +16,11 @@
     "static/media/banana.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/banana.4f102dde8f3fee6a99e1.png",
     "static/media/leaf.png": "/fresh_fruits-WEBSITE_ReactJS/static/media/leaf.2494492049ec270e2011.png",
     "index.html": "/fresh_fruits-WEBSITE_ReactJS/index.html",
-    "main.11351b71.css.map": "/fresh_fruits-WEBSITE_ReactJS/static/css/main.11351b71.css.map",
-    "main.45d4d7f8.js.map": "/fresh_fruits-WEBSITE_ReactJS/static/js/main.45d4d7f8.js.map"
+    "main.63d29c8b.css.map": "/fresh_fruits-WEBSITE_ReactJS/static/css/main.63d29c8b.css.map",
+    "main.d7bca604.js.map": "/fresh_fruits-WEBSITE_ReactJS/static/js/main.d7bca604.js.map"
   },
   "entrypoints": [
-    "static/css/main.11351b71.css",
-    "static/js/main.45d4d7f8.js"
+    "static/css/main.63d29c8b.css",
+    "static/js/main.d7bca604.js"
   ]
 }
