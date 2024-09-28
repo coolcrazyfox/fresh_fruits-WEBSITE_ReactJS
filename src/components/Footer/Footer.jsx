@@ -10,11 +10,31 @@ import {
 } from "react-icons/fa";
 
 const initIconsLogo = [
-  { id: 1, name: "Instagram", logo: FaInstagram, link: "" },
-  { id: 2, name: "Twitter", logo: FaTwitter, link: "" },
-  { id: 3, name: "Facebook", logo: FaFacebookF, link: "" },
-  { id: 4, name: "Telegram", logo: FaTelegram, link: "" },
-  { id: 5, name: "Telegram", logo: FaWhatsapp, link: "" },
+  {
+    id: 1,
+    name: "Instagram",
+    logo: FaInstagram,
+    link: "https://www.instagram.com/",
+  },
+  { id: 2, name: "Twitter", logo: FaTwitter, link: "https://www.twitter.com/" },
+  {
+    id: 3,
+    name: "Facebook",
+    logo: FaFacebookF,
+    link: "https://www.facebook.com/",
+  },
+  {
+    id: 4,
+    name: "Telegram",
+    logo: FaTelegram,
+    link: "https://www.telegram.com/",
+  },
+  {
+    id: 5,
+    name: "Whatsapp",
+    logo: FaWhatsapp,
+    link: "https://www.whatsapp.com/",
+  },
 ];
 const Footer = () => {
   return (
