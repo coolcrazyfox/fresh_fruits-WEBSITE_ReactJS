@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Hero from "../pages/Hero";
+import Hero from "../components/Hero/Hero";
 import About from "../pages/About";
 import Explore from "../pages/Explore";
 import Gallery from "../pages/Gallery";
